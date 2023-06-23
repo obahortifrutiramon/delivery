@@ -277,7 +277,7 @@ def placeOrder(key, secret, quotationId, storeStopId, storeName, clientStopId, c
     return d
 
 
-@st.cache_data
+#@st.cache_data
 def getServices(key, secret, storeCity):
     path = '/v3/cities'
     region = 'BR'
@@ -380,7 +380,7 @@ def readOrdersStatus(sftpUsername, sftpPassword, storeId):
         return st.write('Sem arquivo.')
 
 
-@st.cache_data(ttl=timedelta(minutes=5))
+#@st.cache_data(ttl=timedelta(minutes=5))
 def quotationDataFrame():
     priceList = []
     serviceList = []
