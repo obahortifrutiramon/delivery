@@ -1,0 +1,5 @@
+pandas==1.4.2
+pysftp==0.2.9
+Requests==2.31.0
+streamlit==1.22.0
+~treamlit==1.16.0
